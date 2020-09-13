@@ -81,6 +81,42 @@
                         </table>
                     </div>
                 </div>
+
+
+
+
+
+                
+                <div class="card mt-4">
+                    <div class="card-header">Latest Page</div>
+
+                    <div class="card-body">
+                        <table class="table table-bordered mb-0">
+                            <thead>
+                            <tr>
+                                <th scope="col" width="60">name</th>
+                                <th scope="col" width="60">email</th>
+                                <th scope="col" width="200">type</th>
+                            </tr>
+                            </thead>
+
+                            <tbody>
+                            @foreach($users as $user)
+                                <tr>
+                                    <td>{{ $user->name }}</td>
+                                    <td>{{ $user->email }}</td>
+                                    <td>{{ $user->user_type }}</td>
+
+                                </tr>
+                            @endforeach
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+
+
+
             </div>
         </div>
     </div>

@@ -37,6 +37,8 @@ Route::post('contact', 'WebsiteController@submitContactForm')->middleware(['auth
 Route::get('blogerpost', 'BlogerController@create')->name('blogerpost');
 Route::post('blogerpostsave', 'BlogerController@store')->name('blogerpostsave');
 
+Route::post('userdelete', 'userController@destroy')->name('userdelete');
+
 
 
 Route::get('post/createcomment', 'WebsiteController@createcomment')->name('createcomment');

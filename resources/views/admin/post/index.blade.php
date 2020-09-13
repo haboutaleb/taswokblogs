@@ -59,7 +59,7 @@
                                     <td>
                                         <a href="{{ route('posts.edit', $post->id) }}"
                                            class="btn btn-sm btn-primary">Edit</a>
-                                        {!! Form::open(['route' => ['posts.destroy', $post->id], 'method' => 'delete', 'style' => 'display:inline']) !!}
+                                        {!! Form::open(['route' => ['user.destroy', $post->id], 'method' => 'delete', 'style' => 'display:inline']) !!}
                                         {!! Form::submit('Delete', ['class' => 'btn btn-sm btn-danger']) !!}
                                         {!! Form::close() !!}
                                     </td>

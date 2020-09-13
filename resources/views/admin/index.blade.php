@@ -105,8 +105,12 @@
                                 <tr>
                                     <td>{{ $user->name }}</td>
                                     <td>{{ $user->email }}</td>
-                                    <td>{{ $user->user_type }}</td>
 
+                                    @if($user->user_type==1)
+                                    <td>admin</td>
+                                    @else
+                                    <td>user</td>
+                                    @endif
                                 </tr>
                             @endforeach
                             </tbody>
